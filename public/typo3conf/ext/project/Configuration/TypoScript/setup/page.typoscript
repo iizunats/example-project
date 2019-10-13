@@ -8,5 +8,60 @@ page.10.value (
       <h4 style="font-family: sans-serif;">Welcome to a default website made with <a href="https://typo3.org">TYPO3</a></h4>
    </div>
 )
+
 page.100 =< styles.content.get
-page.includeJS.build = fileadmin/build/build.js
+
+/*
+* page settings
+*/
+page = PAGE
+page {
+  config.removeDefaultJS = 1
+  typeNum = 0
+  bodyTag >
+
+  meta {
+    og:site_name = iizuna
+    og:site_name.attribute = property
+    og:type = website
+    og:type.attribute = property
+    twitter:card = summary
+  }
+
+  includeJS.build = fileadmin/build/build.js
+
+  // render templates
+  10 = FLUIDTEMPLATE
+  10 {
+    templateName = TEXT
+    templateName.stdWrap.cObject = CASE
+    templateName.stdWrap.cObject {
+      key.data = pagelayout
+
+      default = TEXT
+      default.value = Default
+
+      pagets__blank = TEXT
+      pagets__blank.value = Blank
+
+      pagets__home = TEXT
+      pagets__home.value = Home
+    }
+
+    templateRootPaths.10 = EXT:project/Resources/Private/Templates/
+    partialRootPaths.10 = EXT:project/Resources/Private/Partials/
+    layoutRootPaths.10 = EXT:project/Resources/Private/Layouts/
+
+    dataProcessing {
+      20 = TYPO3\CMS\Frontend\DataProcessing\MenuProcessor
+      20 {
+        special = directory
+        special.value = 1
+        special.depth = 2
+        levels = 4
+        includeSpacer = 1
+        as = navigation
+      }
+    }
+  }
+}
