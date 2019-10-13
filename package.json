@@ -1,0 +1,22 @@
+{
+	"name": "example-project",
+	"version": "1.0.0",
+	"description": "TYPO3 Example Project for iizuna",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"dependencies": {
+		"iizuna": "^3.4.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/iizunats/example-project.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/iizunats/example-project/issues"
+	},
+	"homepage": "https://github.com/iizunats/example-project#readme"
+}
