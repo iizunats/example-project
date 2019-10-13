@@ -1,1 +1,1 @@
-page.includeJS.build = fileadmin/build/build.js
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:project/Configuration/TypoScript/setup">
