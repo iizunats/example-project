@@ -1,0 +1,22 @@
+<nav>
+	<ul>
+		<f:for each="{navigation}" as="navigationItem">
+			<li>
+				<f:if condition="{navigationItem.children}">
+					<f:then>
+						<ul>
+							<f:for each="{navigationItem.children}" as="navigationSubItem">
+								<li>
+									<f:link.typolink parameter="{navigationSubItem.link}">{navigationSubItem.title}</f:link.typolink>
+								</li>
+							</f:for>
+						</ul>
+					</f:then>
+					<f:else>
+						<f:link.typolink parameter="{navigationItem.link}">{navigationItem.title}</f:link.typolink>
+					</f:else>
+				</f:if>
+			</li>
+		</f:for>
+	</ul>
+</nav>

@@ -3,8 +3,8 @@ base: 'http://localhost/example-project/public/'
 languages:
   -
     title: English
-    enabled: true
-    languageId: 0
+    enabled: false
+    languageId: '0'
     base: /en/
     typo3Language: default
     locale: en_US.UTF-8
@@ -15,3 +15,4 @@ languages:
     flag: us
 errorHandling: {  }
 routes: {  }
+baseVariants: {  }
