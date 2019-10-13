@@ -7,13 +7,13 @@
 						<ul>
 							<f:for each="{navigationItem.children}" as="navigationSubItem">
 								<li>
-									<f:link.typolink parameter="{navigationSubItem.link}">{navigationSubItem.title}</f:link.typolink>
+									<f:link.typolink additionalAttributes="{load-priority:5}" parameter="{navigationSubItem.link}">{navigationSubItem.title}</f:link.typolink>
 								</li>
 							</f:for>
 						</ul>
 					</f:then>
 					<f:else>
-						<f:link.typolink parameter="{navigationItem.link}">{navigationItem.title}</f:link.typolink>
+						<f:link.typolink additionalAttributes="{load-priority:5}" parameter="{navigationItem.link}">{navigationItem.title}</f:link.typolink>
 					</f:else>
 				</f:if>
 			</li>
