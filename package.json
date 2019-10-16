@@ -9,7 +9,7 @@
 	},
 	"dependencies": {
 		"iizuna": "^3.4.0",
-		"iizuna-page-transition": "*"
+		"iizuna-page-transition": "^0.1.0"
 	},
 	"devDependencies": {
 		"browserify": "^16.2.3",
