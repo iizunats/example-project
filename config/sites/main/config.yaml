@@ -3,7 +3,7 @@ base: 'http://localhost/example-project/public/'
 languages:
   -
     title: English
-    enabled: false
+    enabled: true
     languageId: '0'
     base: /en/
     typo3Language: default
