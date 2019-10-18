@@ -16,6 +16,7 @@ page {
   }
 
   includeJS.build = fileadmin/build/build.js
+  includeCSS.build = fileadmin/build/main.css
 
   // render templates
   10 = FLUIDTEMPLATE
