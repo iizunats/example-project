@@ -1,5 +1,6 @@
 import {ComponentFactory} from "iizuna";
 import {LoadPriorityComponent, PageTransitionComponent} from "iizuna-page-transition";
+import {AddClassComponents} from "./components/add-class.components";
 
 /**
  * The PageTransitionComponent has to cache all wanted components.
@@ -10,7 +11,8 @@ import {LoadPriorityComponent, PageTransitionComponent} from "iizuna-page-transi
  */
 const COMPONENTS = PageTransitionComponent.config([
 	PageTransitionComponent,
-	LoadPriorityComponent
+	LoadPriorityComponent,
+	AddClassComponents
 ]);
 
 /**

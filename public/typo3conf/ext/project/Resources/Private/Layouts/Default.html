@@ -1,7 +1,13 @@
 <f:spaceless>
-	<div data-page-transition>
-		<f:link.page pageUid="1">HOME</f:link.page>
-		<f:render arguments="{_all}" partial="Navigation" />
-		<f:render arguments="{_all}" section="main" />
+	<div
+		class="wrap"
+		data-page-transition
+		data-transition-min-duration="2000"
+		data-add-class="">
+		<div class="inner">
+			<f:link.page pageUid="1">HOME</f:link.page>
+			<f:render arguments="{_all}" partial="Navigation" />
+			<f:render arguments="{_all}" section="main" />
+		</div>
 	</div>
 </f:spaceless>
