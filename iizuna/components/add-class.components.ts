@@ -1,7 +1,5 @@
 import {AbstractComponent, Component, GlobalEventListener} from "iizuna";
-import {StartEvent} from "iizuna-page-transition/lib/events/start.event";
-import {EndEvent} from "iizuna-page-transition/lib/events/end.event";
-import {MiddleEvent} from "iizuna-page-transition/lib/events/middle.event";
+import {EndEvent, MiddleEvent, StartEvent} from "@iizuna/page-transition";
 
 @Component({
 	selector: 'add-class'
