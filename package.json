@@ -18,7 +18,7 @@
 		"gulp-typescript": "^5.0.1",
 		"gulp-uglify": "^3.0.2",
 		"gulp-sass": "^4.0.2",
-		"node-sass": "^4.12.0",
+		"node-sass": "^4.13.1",
 		"tsify": "^4.0.1",
 		"typescript": "^3.5.2",
 		"vinyl-buffer": "^1.0.1",
